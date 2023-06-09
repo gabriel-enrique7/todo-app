@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/components/notes_item.dart';
+import 'package:todo_app/screens/notes/notes_details.dart';
 
 class NotesListScreen extends StatefulWidget {
   const NotesListScreen({super.key});
@@ -15,12 +16,24 @@ class _NotesListScreenState extends State<NotesListScreen> {
       appBar: AppBar(
         title: const Text('Notas'),
       ),
-      body: const Padding(
-        padding: EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
         child: Column(
           children: [
-            NotesItem(title: 'Lista de convidados'),
-            NotesItem(title: 'Compras no mercado'),
+            NotesItem(
+              title: 'Lista de convidados',
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const NotesDetails(details: 'Anotações da Faculdade'),
+                  )
+                );
+              },
+            ),
+            NotesItem(
+              title: 'Compras no mercado',
+              onTap: () {},
+            ),
           ],
         ),
       ),

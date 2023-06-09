@@ -12,6 +12,7 @@ class ToDoListApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'To do list',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.black54,

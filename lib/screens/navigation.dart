@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/screens/notes/favorites_list.dart';
 import 'package:todo_app/screens/notes/notes_list.dart';
-import 'package:todo_app/screens/profile.dart';
+import 'package:todo_app/screens/settings/settings.dart';
 
 class NavigationScreen extends StatefulWidget {
   const NavigationScreen({super.key});
@@ -11,10 +11,10 @@ class NavigationScreen extends StatefulWidget {
 }
 
 class _NavigationScreenState extends State<NavigationScreen> {
-  int currentPage = 0;
+  int currentPage = 1;
 
   List<Widget> pages = const [
-    ProfileScreen(),
+    SettingsScreen(),
     NotesListScreen(),
     FavoritesScreen(),
   ];
@@ -36,7 +36,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
             children: [
               IconButton(
                 onPressed: () => setCurrentPage(0),
-                icon: const Icon(Icons.person),
+                icon: const Icon(Icons.settings),
               ),
               IconButton(
                 onPressed: () => setCurrentPage(1),

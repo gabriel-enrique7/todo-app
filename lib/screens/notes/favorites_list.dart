@@ -15,12 +15,18 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
       appBar: AppBar(
         title: const Text('Favoritos'),
       ),
-      body: const Padding(
-        padding: EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
         child: Column(
           children: [
-            NotesItem(title: 'Lista de convidados'),
-            NotesItem(title: 'Compras no mercado'),
+            NotesItem(
+              title: 'Lista de convidados',
+              onTap: () {},
+            ),
+            NotesItem(
+              title: 'Compras no mercado',
+              onTap: () {},
+            ),
           ],
         ),
       ),

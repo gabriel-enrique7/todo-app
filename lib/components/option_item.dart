@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
-class NotesItem extends StatelessWidget {
+class OptionItem extends StatelessWidget {
+  final IconData icon;
   final String title;
   final Function onTap;
 
-  const NotesItem({
+  const OptionItem({
     super.key,
+    required this.icon,
     required this.title,
     required this.onTap
   });
@@ -20,6 +22,7 @@ class NotesItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(20.0),
         ),
         child: ListTile(
+          leading: Icon(icon),
           title: Text(
             title,
             style: const TextStyle(
