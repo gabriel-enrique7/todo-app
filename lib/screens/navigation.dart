@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:todo_app/screens/favorites_list.dart';
-import 'package:todo_app/screens/notes_list.dart';
+import 'package:todo_app/screens/notes/favorites_list.dart';
+import 'package:todo_app/screens/notes/notes_list.dart';
 import 'package:todo_app/screens/profile.dart';
 
 class NavigationScreen extends StatefulWidget {
