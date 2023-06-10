@@ -34,10 +34,12 @@ class _SignUpFormState extends State<SignUpForm> {
           ),
           CustomTextField(
             controller: _password,
+            obscureText: true,
             labelText: 'Senha',
           ),
           CustomTextField(
             controller: _confirmPassword,
+            obscureText: true,
             labelText: 'Confirmar senha',
           ),
           Padding(

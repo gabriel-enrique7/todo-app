@@ -20,10 +20,6 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
         child: Column(
           children: [
             NotesItem(
-              title: 'Lista de convidados',
-              onTap: () {},
-            ),
-            NotesItem(
               title: 'Compras no mercado',
               onTap: () {},
             ),

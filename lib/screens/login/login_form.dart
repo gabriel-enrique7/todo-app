@@ -33,6 +33,7 @@ class _LoginFormState extends State<LoginForm> {
           ),
           CustomTextField(
             controller: _password,
+            obscureText: true,
             labelText: 'Senha',
           ),
           Align(

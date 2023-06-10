@@ -39,7 +39,11 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                     width: 80,
                     height: 80,
                     child: CircleAvatar(
-                      child: Text('GE'),
+                      backgroundColor: Colors.black54,
+                      child: Text(
+                        'GE',
+                        style: TextStyle(color: Colors.white),
+                      ),
                     ),
                   )
                 ],
@@ -51,6 +55,7 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
             ),
             CustomTextField(
               controller: _password,
+              obscureText: true,
               labelText: 'Senha',
             ),
             Padding(
